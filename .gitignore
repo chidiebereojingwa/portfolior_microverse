@@ -1,0 +1,5 @@
+# Ignore test.md file
+node_modules/
+test.md
+.idea/
+
