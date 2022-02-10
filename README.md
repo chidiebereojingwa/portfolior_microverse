@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello microverse
+#Hello microverse
 
 This repository is an intro project to microverse with HTML,CSS and Linters. 
 
@@ -25,4 +25,7 @@ run the index.html
 - GitHub: [@githubhandle](https://github.com/chidiebereojingwa)
 - Twitter: [@twitterhandle](https://twitter.com/ojingwa)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/chidiebereojingwa)
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
 
