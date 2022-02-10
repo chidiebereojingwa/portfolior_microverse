@@ -697,7 +697,7 @@ ul {
 }
 
 #contact-form article {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   text-align: center;
   font-style: normal;
   font-weight: bold;
@@ -734,7 +734,7 @@ ul {
 }
 
 #button {
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -746,7 +746,7 @@ ul {
   text-decoration: none;
   margin-top: 12px;
   margin-left: 93px;
-  color: #ffffff;
+  color: #fff;
   background-color: #ff6b00;
   cursor: pointer;
   border: none;
@@ -770,7 +770,8 @@ ul {
 
 #line {
   border: 1px solid black;
-  width: 375px}
+  width: 375px;
+}
 
 .soc {
   color: #505f79;
