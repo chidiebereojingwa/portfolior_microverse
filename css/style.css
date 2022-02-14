@@ -210,9 +210,6 @@ body {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 5px;
   background-color: #fff;
   padding-left: 40px;
   margin-top: -9px;
@@ -253,6 +250,8 @@ body {
 }
 
 .stack {
+  float: left;
+  margin-right: 6px;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
