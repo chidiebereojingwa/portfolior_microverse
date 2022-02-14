@@ -343,8 +343,6 @@ body {
 }
 
 .grid-container2 {
-  position: static;
-  float: left;
   padding-left: 61px;
   margin-top: -9px;
   margin-left: -2px;
@@ -352,6 +350,8 @@ body {
 }
 
 .stack2 {
+  float:left;
+  margin: 6px;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
