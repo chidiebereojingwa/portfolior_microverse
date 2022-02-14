@@ -342,9 +342,6 @@ body {
 }
 
 .grid-container2 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 5px;
   padding-left: 61px;
   margin-top: -9px;
   margin-left: -2px;
@@ -352,6 +349,8 @@ body {
 }
 
 .stack2 {
+  float: left;
+  margin-right: 6px;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
