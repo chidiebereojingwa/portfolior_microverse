@@ -343,9 +343,8 @@ body {
 }
 
 .grid-container2 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 5px;
+  position: static;
+  float: left;
   padding-left: 61px;
   margin-top: -9px;
   margin-left: -2px;
