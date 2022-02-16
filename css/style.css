@@ -66,6 +66,10 @@ body {
   top: 92px;
 }
 
+#ulList {
+  display: none;
+}
+
 .name {
   left: 24px;
   top: 120px;
