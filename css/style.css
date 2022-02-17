@@ -654,6 +654,10 @@ body {
   color: #f4f1f0;
 }
 
+.seeProject {
+  transition: background 1s;
+}
+
 .seeProject:hover {
   background-color: #fff5e1;
   color: #f55800;
@@ -751,6 +755,7 @@ ul {
   background-color: #ff6b00;
   cursor: pointer;
   border: none;
+  transition: background 1s;
 }
 
 #button:hover {
