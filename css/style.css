@@ -340,6 +340,7 @@ body {
   color: #fff;
   background: #ff6b00;
   cursor: pointer;
+  transition: background 1s;
 }
 
 .grid-container2 {
