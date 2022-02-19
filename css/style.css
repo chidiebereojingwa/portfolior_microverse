@@ -348,6 +348,24 @@ nav ul .email-icon {
   display: block;
 }
 
+.cards-wrapper .card:hover {
+  padding: 0;
+  background: url('../assets/images/card-placeholder.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #000;
+  animation: backzoom 2s;
+  animation-fill-mode: forwards;
+}
+
+.cards-wrapper .card:hover .content {
+  display: none;
+}
+
+.cards-wrapper .card:hover .btn {
+  display: block;
+}
+
 /* About Me */
 
 .about-me {
@@ -414,7 +432,6 @@ nav ul .email-icon {
 }
 
 .about-me .about-wrapper .skills {
-  /* margin: 0 auto; */
   width: 100%;
   display: grid;
   justify-content: space-between;
@@ -557,6 +574,73 @@ input:focus {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 992px) and (min-width:600px){
+.headline {
+  display: flex;
+  width: 100vw;
+  height: 798px;
+  align-items: center;
+  background-color: #1c1a19;
+  background-image: url(../assets/images/Illustration-header.png);
+  background-position: top 0 right -403px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-me {
+  padding-top: 120px;
+  background-image: url(../assets/images/about-me-back-mobile.png);
+  background-position: top 254px right 0;
+}
+
+.cards-wrapper {
+  margin: 0 auto;
+  width: 745px;
+  padding-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+}
+
+.works .featured {
+  color: #091e42;
+  margin-top: 114px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 81px;
+  gap: 24px;
+}
+
+.works .title {
+  padding-left: 71px;
+}
+}
+
+@media only screen and (max-width: 600px){
+  .headline .social ul {
+    display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+  }
+
+  a, ul {
+      text-decoration: none;
+      list-style: none;
+      color: inherit;
+  }
+
+  .headline .social ul li {
+    padding-left: 1.3rem;
+  }
+
+  .about-me {
+  width: 100%;
+  padding-top: 120px;
+  background-image: url(../assets/images/about-me-back-mobile.png);
+  background-position: top 296px right 0;
+  }
+}
+
 /* Styling contact for desktop */
 
 @media only screen and (max-width: 600px) {
@@ -589,7 +673,7 @@ input:focus {
     justify-content: center;
     height: 590px;
     flex-direction: column;
-    background-image: url('./assets/images/illustration-header-mobile.png');
+    background-image: url('../assets/images/illustration-header-mobile.png');
     background-position: bottom -40px right 0;
     background-repeat: no-repeat;
     background-size: 140px;
@@ -770,7 +854,7 @@ input:focus {
 
   .about-me {
     padding-top: 120px;
-    background-image: url('./assets/images/about-me-back-mobile.png');
+    background-image: url('../assets/images/about-me-back-mobile.png');
     background-position: top 390px right 0;
   }
 
