@@ -574,7 +574,7 @@ input:focus {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 992px) and (min-width:600px){
+@media only screen and (max-width: 992px) and (min-width:600px) {
   .headline {
     display: flex;
     width: 100vw;
@@ -616,29 +616,30 @@ input:focus {
   }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .headline .social ul {
     display: flex;
       flex-direction: row;
       justify-content: flex-start;
   }
 
-  a, ul {
-      text-decoration: none;
-      list-style: none;
-      color: inherit;
-  }
+  a, 
+    ul {
+        text-decoration: none;
+        list-style: none;
+        color: inherit;
+    }
 
-  .headline .social ul li {
-    padding-left: 1.3rem;
-  }
+    .headline .social ul li {
+      padding-left: 1.3rem;
+    }
 
-  .about-me {
-  width: 100%;
-  padding-top: 120px;
-  background-image: url(../assets/images/about-me-back-mobile.png);
-  background-position: top 296px right 0;
-  }
+    .about-me {
+    width: 100%;
+    padding-top: 120px;
+    background-image: url(../assets/images/about-me-back-mobile.png);
+    background-position: top 296px right 0;
+    }
 }
 
 /* Styling contact for desktop */
