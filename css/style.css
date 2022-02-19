@@ -116,7 +116,7 @@ nav ul .email-icon {
   height: 798px;
   align-items: center;
   background-color: #1c1a19;
-  background-image: url(./assets/images/Illustration-header.png);
+  background-image: url(../assets/images/Illustration-header.png);
   background-position: top 0 right 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -355,7 +355,7 @@ nav ul .email-icon {
   width: 100vw;
   color: #fff;
   background-color: #262626;
-  background-image: url('./assets/images/about-me-back.png');
+  background-image: url('../assets/images/about-me-back.png');
   background-repeat: no-repeat;
   background-position: top 100px right 0;
 }
@@ -828,7 +828,7 @@ input:focus {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   .contact {
     display: flex;
     justify-content: space-around;
