@@ -574,7 +574,7 @@ input:focus {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 992px) and (min-width:600px) {
+@media only screen and (max-width: 992px) and (min-width: 600px) {
   .headline {
     display: flex;
     width: 100vw;
@@ -617,14 +617,18 @@ input:focus {
 }
 
 @media only screen and (max-width: 600px) {
-  .headline .social ul {
-    display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
+  .headline .social {
+    margin: 0;
   }
 
-  a, 
-    ul {
+  .headline .social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  a,
+  ul {
         text-decoration: none;
         list-style: none;
         color: inherit;
@@ -650,8 +654,8 @@ input:focus {
   nav .ul,
   nav .center,
   nav.end {
-    display: none;
-  }
+      display: none;
+    }
 
   nav .name {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
