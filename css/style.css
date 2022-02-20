@@ -627,13 +627,6 @@ input:focus {
     justify-content: flex-start;
   }
 
-a,
-  ul {
-    text-decoration: none;
-    list-style: none;
-    color: inherit;
-  }
-
   .headline .social ul li {
     padding-left: 1.3rem;
   }
