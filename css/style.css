@@ -617,7 +617,7 @@ input:focus {
 }
 
 @media only screen and (max-width: 600px) {
-  .headline .social {
+  ul {
     margin: 0;
   }
 
@@ -629,10 +629,10 @@ input:focus {
 
   a,
   ul {
-      text-decoration: none;
-      list-style: none;
-      color: inherit;
-    }
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+  }
 
   .headline .social ul li {
     padding-left: 1.3rem;
