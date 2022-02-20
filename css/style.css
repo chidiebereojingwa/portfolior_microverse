@@ -629,21 +629,21 @@ input:focus {
 
   a,
   ul {
-        text-decoration: none;
-        list-style: none;
-        color: inherit;
+      text-decoration: none;
+      list-style: none;
+      color: inherit;
     }
 
-    .headline .social ul li {
-      padding-left: 1.3rem;
-    }
+  .headline .social ul li {
+    padding-left: 1.3rem;
+  }
 
-    .about-me {
+  .about-me {
     width: 100%;
     padding-top: 120px;
     background-image: url(../assets/images/about-me-back-mobile.png);
     background-position: top 296px right 0;
-    }
+  }
 }
 
 /* Styling contact for desktop */
@@ -654,8 +654,8 @@ input:focus {
   nav .ul,
   nav .center,
   nav.end {
-      display: none;
-    }
+    display: none;
+  }
 
   nav .name {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
