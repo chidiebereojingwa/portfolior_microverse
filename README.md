@@ -18,6 +18,8 @@ open your terminal and type: git clone https://github.com/chidiebereojingwa/Hell
 ### Usage
 Clone project to your local machine 
 run the index.html
+## Live Demo
+https://chidiebereojingwa.github.io/portfolior_microverse/
 ## Authors
 
 👤 **Author1**
