@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="menu">
         <div class="start"></div>
         <div class="name">
           <a href="index.html" class="welcome">Chidiebere Ojingwa</a>
@@ -32,19 +32,25 @@
           </li>
         </ul>
         <div class="end"></div>
-
-        <!-- Menu for Mobile -->
-        <div id="container-mobile-menu">
-          <nav id="mobile-menu">
-              <a class="close-icon" href="#">&times;</a>
-              <div id="links-container">
-                  <a class="menu-link-mb menu-link menu-item" href="#cards-section">Portfolio</a>
-                  <a class="menu-link-mb menu-link menu-item" href="#about-section">About</a>
-                  <a class="menu-link-mb menu-link menu-item" href="#contact-section">Contact</a>            
-              </div>
-          </nav>
-      </div>
       </nav>
+
+      <!-- Mobile menu  -->
+      <div id="mobile-menu">
+        <div id="close-menu">
+          <a href="#"
+            ><img
+              class="close-icon"
+              src="./assets/icons/close-menu.png"
+              alt="close popup menu"
+          /></a>
+        </div>
+        <ul class="popup-list">
+          <li><a class="menu-list-item" href="#portfolio">Portfolio</a></li>
+          <li><a class="menu-list-item" href="#about">About</a></li>
+          <li><a class="menu-list-item" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
     </header>
     <main>
       <section class="headline">
