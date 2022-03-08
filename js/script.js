@@ -15,6 +15,14 @@ function clickSandwichIcon (){
 
 sandwichIcon.addEventListener('click', clickSandwichIcon)
 
+function closeMenu() {
+    document.body.style.overflowY = 'visible';
+    header.style.cssText = 'height: 72px; background-color: #3c3a39;';
+    menu.style.display = 'flex';
+    mobileMenu.style.display = 'none';
+    console.log("Chidiebere Ojingwa")
+}
+
+closeIcon.addEventListener('click', closeMenu);
 
 
-console.log("Chidiebere Ojingwa")
