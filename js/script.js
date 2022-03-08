@@ -25,4 +25,6 @@ function closeMenu() {
 
 closeIcon.addEventListener('click', closeMenu);
 
-
+menuItem.forEach((item) => {
+    item.addEventListener('click', closeMenu);
+  });
