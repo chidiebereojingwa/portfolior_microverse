@@ -104,3 +104,16 @@ for (let i = 1; i < mydata.length; i += 1) {
     currentCard.style.background = `url(${mydata[i].featuredImage})`;
   });
 }
+
+// On card mouse leave
+for (let i = 1; i < mydata.length; i += 1) {
+  const currentCard = document.querySelector(`.card-${i}`);
+  currentCard.addEventListener('mouseleave', () => {
+    currentCard.style.background = ` linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 84.18%
+    ),
+    url('${mydata[i].featuredImage}')`;
+  });
+}
