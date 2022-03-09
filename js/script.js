@@ -65,3 +65,10 @@ myWork.innerHTML = `
           </div>
         </div>
 `;
+
+// mydata cards
+for (let i = 1; i < mydata.length; i += 1) {
+  let itemElement = '';
+  mydata[i].technologies.forEach((tech) => {
+    itemElement += `<li><a href="#">${tech}</a></li>`;
+  });
