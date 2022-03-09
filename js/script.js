@@ -96,3 +96,11 @@ cardsWrapper.appendChild(cardDiv);
   ),
   url('${mydata[i].featuredImage}')`;
 }
+
+// On mouse enter
+for (let i = 1; i < mydata.length; i += 1) {
+  const currentCard = document.querySelector(`.card-${i}`);
+  currentCard.addEventListener('mouseenter', () => {
+    currentCard.style.background = `url(${mydata[i].featuredImage})`;
+  });
+}
