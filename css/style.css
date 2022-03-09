@@ -289,6 +289,23 @@ nav ul .email-icon {
   line-height: 24px;
 }
 
+.works .featured .tags {
+  display: flex;
+}
+
+.works .featured .tags a {
+  display: inline-block;
+  margin-top: 24px;
+  margin-right: 12px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
 .cards-wrapper {
   margin: 0 auto;
   width: 1155px;
@@ -508,6 +525,24 @@ nav ul .email-icon {
   font-weight: normal;
   font-size: 22px;
   line-height: 43px;
+}
+
+.cards-wrapper .card .tags {
+  display: flex;
+}
+
+.cards-wrapper .card .tags a {
+  display: inline-block;
+  margin-top: 24px;
+  margin-right: 12px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid #8993a4;
 }
 
 .contact {
