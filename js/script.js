@@ -72,3 +72,17 @@ for (let i = 1; i < mydata.length; i += 1) {
   mydata[i].technologies.forEach((tech) => {
     itemElement += `<li><a href="#">${tech}</a></li>`;
   });
+
+  const cardDiv = document.createElement('div');
+  cardDiv.innerHTML = `
+  <div class="card card-${i}">
+    <div class="content">
+      <h4 class="title">${mydata[i].name}</h4>
+      <p class="summary">${mydata[i].description}</p>
+      <ul class="tags">
+        ${itemElement}
+      </ul>
+    </div>
+    <button id="work-btn" class="btn btn-main" type="button" data-work="${i}">See Project</button>
+  </div>
+`;
