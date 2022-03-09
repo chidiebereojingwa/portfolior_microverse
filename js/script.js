@@ -86,3 +86,13 @@ for (let i = 1; i < mydata.length; i += 1) {
     <button id="work-btn" class="btn btn-main" type="button" data-work="${i}">See Project</button>
   </div>
 `;
+
+cardsWrapper.appendChild(cardDiv);
+  const currentCard = document.querySelector(`.card.card-${i}`);
+  currentCard.style.background = ` linear-gradient(
+    180.45deg,
+    rgba(38, 38, 38, 0) 0.75%,
+    rgba(38, 38, 38, 0.9) 84.18%
+  ),
+  url('${mydata[i].featuredImage}')`;
+}
