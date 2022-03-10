@@ -24,6 +24,13 @@ function closeMenu() {
 
 closeIcon.addEventListener('click', closeMenu);
 
+function closeMenuResize() {
+  if (window.innerWidth > 600) {
+    closeMenu();
+  }
+}
+window.addEventListener('resize', closeMenuResize);
+
 menuItem.forEach((item) => {
   item.addEventListener('click', closeMenu);
 });
