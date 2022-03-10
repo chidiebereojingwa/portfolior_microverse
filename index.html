@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="menu">
         <div class="start"></div>
         <div class="name">
           <a href="index.html" class="welcome">Chidiebere Ojingwa</a>
@@ -19,9 +19,9 @@
         </div>
         <div class="center"></div>
         <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#cards-section">Portfolio</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-section">Contact</a></li>
           <li>
             <a href="#"
               ><img
@@ -33,6 +33,24 @@
         </ul>
         <div class="end"></div>
       </nav>
+
+      <!-- Mobile menu  -->
+      <div id="mobile-menu">
+        <div id="close-menu">
+          <a href="#"
+            ><img
+              class="close-icon"
+              src="./assets/icons/close-menu.png"
+              alt="close popup menu"
+          /></a>
+        </div>
+        <ul class="popup-list">
+          <li><a class="menu-list-item" href="#cards-section">Portflio</a></li>
+          <li><a class="menu-list-item" href="#about-section">About</a></li>
+          <li><a class="menu-list-item" href="#contact-section">Contact</a></li>
+        </ul>
+      </div>
+
     </header>
     <main>
       <section class="headline">
@@ -68,7 +86,7 @@
         </div>
         <div class="background"></div>
       </section>
-      <section class="works">
+      <section id="cards-section" class="works">
         <div class="title">
           <h2>My Recent Works</h2>
           <div class="divide"></div>
@@ -94,7 +112,7 @@
               <li><a href="#">bootstrap</a></li>
               <li><a href="#">Ruby</a></li>
             </ul>
-            <button class="btn btn-main">See Project</button>
+            <button type="button" class="btn btn-main">See Project</button>
           </div>
         </div>
         <div class="cards-wrapper">
@@ -111,7 +129,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button class="btn btn-main">See Project</button>
+            <button  type="button" class="btn btn-main">See Project</button>
           </div>
           <div class="card">
             <div class="content">
@@ -126,7 +144,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button class="btn btn-main">See Project</button>
+            <button type="button" class="btn btn-main">See Project</button>
           </div>
           <div class="card">
             <div class="content">
@@ -141,7 +159,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button class="btn btn-main">See Project</button>
+            <button  type="button" class="btn btn-main">See Project</button>
           </div>
           <div class="card">
             <div class="content">
@@ -156,7 +174,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button class="btn btn-main">See Project</button>
+            <button type="button" class="btn btn-main">See Project</button>
           </div>
           <div class="card">
             <div class="content">
@@ -171,7 +189,7 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button class="btn btn-main">See Project</button>
+            <button type="button" class="btn btn-main">See Project</button>
           </div>
           <div class="card">
             <div class="content">
@@ -186,11 +204,11 @@
                 <li><a href="#">Ruby</a></li>
               </ul>
             </div>
-            <button class="btn btn-main">See Project</button>
+            <button type="button" class="btn btn-main">See Project</button>
           </div>
         </div>
       </section>
-      <section class="about-me">
+      <section id="about-section" class="about-me">
         <div class="about-wrapper">
           <div class="about-content">
             <h2>About me</h2>
@@ -200,7 +218,7 @@
               you like what you see and have a project you need coded, don't
               hestiate to contact me.
             </p>
-            <button class="btn btn-main">Get My Resume</button>
+            <button  type="button" class="btn btn-main">Get My Resume</button>
           </div>
           <div class="divide"></div>
           <div class="details">
@@ -249,7 +267,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact-section" class="contact">
         <h2 class="intro">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
@@ -335,5 +353,6 @@
         </li>
       </ul>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>
