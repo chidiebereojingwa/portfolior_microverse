@@ -212,13 +212,13 @@ function displayMessage(message, element, email) {
   element.innerText = message;
 }
 
-const toggleDisableFields = () => {
+const disableRequired = () => {
   firstName.removeAttribute('required');
   lastName.removeAttribute('required');
   fullName.removeAttribute('required');
 };
 
-window.addEventListener('load', toggleDisableFields);
+window.addEventListener('load', disableRequired);
 
 document.querySelector('.contact-form').addEventListener('submit', (e) => {
   const emailEntered = document.querySelector('#email');
