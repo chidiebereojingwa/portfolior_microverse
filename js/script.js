@@ -1,7 +1,5 @@
 import mydata from '../mydata.js';
 
-console.log(mydata);
-
 const menu = document.querySelector('#menu');
 const closeIcon = document.querySelector('.close-icon');
 const mobileMenu = document.querySelector('#mobile-menu');
@@ -205,19 +203,19 @@ function validateEmail(inputElement) {
   return emailRegex.test(username);
 }
 
-function showMessage(message, element, email) {
-  const correctEmail = email.toLowerCase();
-  message += ` Did you mean this? ${correctEmail}`;
+function displayMessage(message, element, email) {
+  const validEmail = email.toLowerCase();
+  message += ` Do you mean? ${validEmail}`;
   element.innerText = message;
 }
 
 document.querySelector('.contact-form').addEventListener('submit', (e) => {
-  const emailInput = document.querySelector('#email');
-  const isValid = validateEmail(emailInput);
+  const emailEntered = document.querySelector('#email');
+  const isValid = validateEmail(emailEntered);
   if (!isValid) {
     e.preventDefault();
-    const msgErrorOutContainer = document.querySelector('#validation-message');
-    showMessage('Email should be in lower case, Form not sent.', msgErrorOutContainer, emailInput.value);
+    const errorMsg = document.querySelector('#validation-message');
+    displayMessage('Email should be in lower case, Form not sent.', errorMsg, emailEntered.value);
     return false;
   }
   return true;
