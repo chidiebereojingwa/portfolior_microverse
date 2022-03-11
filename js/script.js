@@ -1,7 +1,5 @@
 import mydata from '../mydata.js';
 
-console.log(mydata);
-
 const menu = document.querySelector('#menu');
 const closeIcon = document.querySelector('.close-icon');
 const mobileMenu = document.querySelector('#mobile-menu');
@@ -202,4 +200,37 @@ const displayModal = (event) => {
 
 workButtons.forEach((btn) => {
   btn.addEventListener('click', displayModal);
+});
+
+// Validating mail form
+const firstName = document.querySelector('#first-name');
+const lastName = document.querySelector('#last-name');
+const fullName = document.querySelector('#name');
+
+const disableRequired = () => {
+  firstName.removeAttribute('required');
+  lastName.removeAttribute('required');
+  fullName.removeAttribute('required');
+};
+
+window.addEventListener('load', disableRequired);
+
+function validEmail(value) {
+  if (value.match(/^[a-z@.0-9-_]*$/)) {
+    return true;
+  }
+  return false;
+}
+
+document.querySelector('.contact-form').addEventListener('submit', (e) => {
+  const emailEntered = document.querySelector('#email');
+  const errorMsg = document.querySelector('#validation-message');
+  if (validEmail(emailEntered.value)) {
+    errorMsg.textContent = '';
+    emailEntered.style.border = '1px solid #cfd8dc';
+  } else {
+    e.preventDefault();
+    emailEntered.style.border = '3px solid red';
+    errorMsg.textContent = 'Submission FAILS!! Email should be lower case, Like: "example@mail.com"';
+  }
 });

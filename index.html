@@ -50,7 +50,6 @@
           <li><a class="menu-list-item" href="#contact-section">Contact</a></li>
         </ul>
       </div>
-
     </header>
     <main>
       <section class="headline">
@@ -87,12 +86,10 @@
         <div class="background"></div>
       </section>
       <!-- work -->
-      <section id="work-modal">
-      </section>
+      <section id="work-modal"></section>
       <section class="works" id="portfolio">
         <div id="my-work"></div>
-        <div class="cards-wrapper">
-        </div>
+        <div class="cards-wrapper"></div>
       </section>
 
       <section id="about-section" class="about-me">
@@ -105,7 +102,7 @@
               you like what you see and have a project you need coded, don't
               hestiate to contact me.
             </p>
-            <button  type="button" class="btn btn-main">Get My Resume</button>
+            <button type="button" class="btn btn-main">Get My Resume</button>
           </div>
           <div class="divide"></div>
           <div class="details">
@@ -165,6 +162,7 @@
           method="post"
         >
           <input
+            id="name"
             class="name"
             type="text"
             maxlength="30"
@@ -173,8 +171,9 @@
             required
           />
           <div class="full-name">
-            <input
+            <input            
               class="first-name"
+              id="first-name"
               type="text"
               maxlength="30"
               name="name"
@@ -183,6 +182,7 @@
             />
             <input
               class="last-name"
+              id="last-name"
               type="text"
               maxlength="30"
               name="last-name"
@@ -192,6 +192,7 @@
           </div>
           <input
             class="email"
+            id="email"
             type="email"
             name="email"
             placeholder="Email address"
@@ -199,11 +200,13 @@
           />
           <textarea
             class="comment"
+            id="comment"
             placeholder="Enter text here"
             name="comment"
             maxlength="500"
             required
           ></textarea>
+          <small id="validation-message"></small>
           <button class="form-btn btn btn-main" type="submit">
             Get in touch
           </button>
