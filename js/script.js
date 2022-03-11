@@ -200,18 +200,6 @@ const firstName = document.querySelector('#first-name');
 const lastName = document.querySelector('#last-name');
 const fullName = document.querySelector('#name');
 
-function validateEmail(inputElement) {
-  const username = inputElement.value.split('@')[0];
-  const emailRegex = /^[a-z_.\-|1-9]+$/;
-  return emailRegex.test(username);
-}
-
-function displayMessage(message, element, email) {
-  const validEmail = email.toLowerCase();
-  message += ` Do you mean? ${validEmail}`;
-  element.innerText = message;
-}
-
 const disableRequired = () => {
   firstName.removeAttribute('required');
   lastName.removeAttribute('required');
@@ -220,14 +208,22 @@ const disableRequired = () => {
 
 window.addEventListener('load', disableRequired);
 
+function validEmail(value) {
+  if (value.match(/^[a-z@.0-9-_]*$/)) {
+    return true;
+  }
+  return false;
+}
+
 document.querySelector('.contact-form').addEventListener('submit', (e) => {
   const emailEntered = document.querySelector('#email');
-  const isValid = validateEmail(emailEntered);
-  if (!isValid) {
+  const errorMsg = document.querySelector('#validation-message');
+  if (validEmail(emailEntered.value)) {
+    errorMsg.textContent = '';
+    emailEntered.style.border = '1px solid #cfd8dc';
+  } else {
     e.preventDefault();
-    const errorMsg = document.querySelector('#validation-message');
-    displayMessage('Submission FAILS!! Email should be lower case, Like: "example@mail.com"', errorMsg, emailEntered.value);
-    return false;
+    emailEntered.style.border = '3px solid red';
+    errorMsg.textContent = 'Submission FAILS!! Email should be lower case, Like: "example@mail.com"';
   }
-  return true;
 });
