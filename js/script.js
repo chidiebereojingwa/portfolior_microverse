@@ -1,7 +1,7 @@
 import mydata from '../mydata.js';
 
-const menu = document.querySelector('#menu');
-const closeIcon = document.querySelector('.close-icon');
+const menu = document.querySelector('.menu');
+const closeIcon = document.querySelector('#close-icon');
 const mobileMenu = document.querySelector('#mobile-menu');
 const sandwichIcon = document.querySelector('.sandwich');
 const menuItem = document.querySelectorAll('.menu-list-item');
@@ -175,12 +175,12 @@ const createModal = (i) => {
 };
 
 const displayModal = (event) => {
-  const modalSection = document.querySelector('#work-modal');
+  const modalSection = document.querySelector('.work-modal');
   const index = event.target.dataset.work;
   const workModal = createModal(index);
   modalSection.innerHTML = workModal;
   modalSection.style.display = 'block';
-  const closeModalBtn = document.querySelector('#close-works-modal');
+  const closeModalBtn = document.querySelector('.close-works-modal');
   closeModalBtn.addEventListener('click', () => {
     modalSection.style.display = 'none';
   });
