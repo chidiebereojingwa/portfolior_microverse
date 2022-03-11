@@ -196,6 +196,9 @@ workButtons.forEach((btn) => {
 });
 
 // Validating mail form
+const firstName = document.querySelector('#first-name');
+const lastName = document.querySelector('#last-name');
+const fullName = document.querySelector('#name');
 
 function validateEmail(inputElement) {
   const username = inputElement.value.split('@')[0];
@@ -209,13 +212,21 @@ function displayMessage(message, element, email) {
   element.innerText = message;
 }
 
+const toggleDisableFields = () => {
+  firstName.removeAttribute('required');
+  lastName.removeAttribute('required');
+  fullName.removeAttribute('required');
+};
+
+window.addEventListener('load', toggleDisableFields);
+
 document.querySelector('.contact-form').addEventListener('submit', (e) => {
   const emailEntered = document.querySelector('#email');
   const isValid = validateEmail(emailEntered);
   if (!isValid) {
     e.preventDefault();
     const errorMsg = document.querySelector('#validation-message');
-    displayMessage('Email should be in lower case, Form not sent.', errorMsg, emailEntered.value);
+    displayMessage('Submission FAILS!! Email should be lower case, Like: "example@mail.com"', errorMsg, emailEntered.value);
     return false;
   }
   return true;
