@@ -629,7 +629,7 @@ input:focus {
 }
 
 /* Validation Message  */
-#validation-message {
+/* #validation-message {
   align-self: center;
   font-weight: bold;
   color: #8993a4;
@@ -638,7 +638,7 @@ input:focus {
   margin-top: 25px;
   box-shadow: 0 0 10px #5d91ec;
   background-color: #ffae18;
-}
+} */
 
 /* footer section */
 .social-footer {

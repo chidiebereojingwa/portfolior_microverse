@@ -196,3 +196,29 @@ const displayModal = (event) => {
 workButtons.forEach((btn) => {
   btn.addEventListener('click', displayModal);
 });
+
+// Validating mail form
+
+function validateEmail(inputElement) {
+  const username = inputElement.value.split('@')[0];
+  const emailRegex = /^[a-z_.\-|1-9]+$/;
+  return emailRegex.test(username);
+}
+
+function showMessage(message, element, email) {
+  const correctEmail = email.toLowerCase();
+  message += ` Did you mean this? ${correctEmail}`;
+  element.innerText = message;
+}
+
+document.querySelector('.contact-form').addEventListener('submit', (e) => {
+  const emailInput = document.querySelector('#email');
+  const isValid = validateEmail(emailInput);
+  if (!isValid) {
+    e.preventDefault();
+    const msgErrorOutContainer = document.querySelector('#validation-message');
+    showMessage('Email should be in lower case, Form not sent.', msgErrorOutContainer, emailInput.value);
+    return false;
+  }
+  return true;
+});
