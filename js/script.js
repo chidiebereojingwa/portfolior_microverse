@@ -234,3 +234,39 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
     errorMsg.textContent = 'Submission FAILS!! Email should be lower case, Like: "example@mail.com"';
   }
 });
+
+// Form Local Storage
+const formData = {};
+
+// helper function for Persist Data
+const saveData = (data) => {
+  const stringyData = JSON.stringify(data);
+  window.localStorage.setItem('customFormData', stringyData);
+};
+
+// Event listener to persist data
+document.querySelector('.contact-form').addEventListener('change', () => {
+  // Preserve data in the browser
+  const inputs = document.querySelectorAll('input');
+  const textArea = document.querySelector('textarea');
+  inputs.forEach((input) => {
+    formData[input.id] = input.value;
+  });
+  formData[textArea.id] = textArea.value;
+  saveData(formData);
+});
+
+const reinsertData = (formData) => {
+  Object.entries(formData).forEach((ele) => {
+    const [key, value] = ele;
+    document.getElementById(key).value = value;
+  });
+};
+
+// Reinsert form data values if data persisted
+window.addEventListener('load', () => {
+  const formDataObj = JSON.parse(window.localStorage.getItem('customFormData'));
+  if (formDataObj) {
+    reinsertData(formDataObj);
+  }
+});
