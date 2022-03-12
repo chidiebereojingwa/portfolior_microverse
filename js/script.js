@@ -238,11 +238,11 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
 // Form Local Storage
 const formData = {};
 
-// helper function for Persist Data 
+// helper function for Persist Data
 const saveData = (data) => {
   const stringyData = JSON.stringify(data);
   window.localStorage.setItem('customFormData', stringyData);
-}
+};
 
 // Event listener to persist data
 document.querySelector('.contact-form').addEventListener('change', () => {
@@ -256,12 +256,12 @@ document.querySelector('.contact-form').addEventListener('change', () => {
   saveData(formData);
 });
 
-const reinsertData = (formData)=> {
+const reinsertData = (formData) => {
   Object.entries(formData).forEach((ele) => {
     const [key, value] = ele;
     document.getElementById(key).value = value;
   });
-}
+};
 
 // Reinsert form data values if data persisted
 window.addEventListener('load', () => {
