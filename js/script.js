@@ -238,7 +238,7 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
 // Form Local Storage
 const formData = {};
 
-// Persist Data helper
+// helper function for Persist Data 
 const saveData = (data) => {
   const stringyData = JSON.stringify(data);
   window.localStorage.setItem('customFormData', stringyData);
